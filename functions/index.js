@@ -43,7 +43,7 @@ const appSearch = (text) => fetch(
     )
     .then(res => res.json())
     .then(res => {
-        return res.map((r) => r['appid'])
+        return res.map((r) => Number(r['appid']))
     }) 
 
 
